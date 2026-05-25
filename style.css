@@ -1,3 +1,30 @@
+.info-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-box {
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    font-size: 14px;
+    color: #1F2937;
+}
+
 .temoin-section {
     background-color: #E5E7EB;
     padding: 40px;
