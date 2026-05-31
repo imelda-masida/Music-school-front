@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusiQUP Academy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="JavaScript.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
   <div class="hero-content">
     <h1 class="hero-title">MusiQUP Academy</h1>
     <p class="hero-subtitle">L'art de jouer, la joie d'apprendre(slogan exemple)</p>
-   <!--<a href="contact.html" class="hero-button">S'INSCRIRE POUR PASSION/S'INSCRIRE POUR UNE VIE</a>-->
+   <!--<a href="contact.html" class="hero-button">S'INSCRIRE</a>-->
   </div>
 </section>
 
@@ -27,11 +29,30 @@
                 <strong><p>Nos ateliers</p></strong>
             </div>
         </section>
-<section class="temoin-section">
-            <p class="temo">“c'est un honneur pour moi de faire partie de cette communauté 
-              et de grandir avec eux”</p>
-            <strong>-nom auteur</strong>
-        </section>
+
+<div class="swiper mySwiper" style="background-color: #E5E7EB;
+    padding: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1F2937;">
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide card-commentaire">
+        <p>"Super académie ! Mon fils adore ses cours de violon, 
+          le professeur est très pédagogue et inspirant."</p>
+         <span>- ex:(Maman d'élève)</span>
+      </div>
+    
+      <div class="swiper-slide card-commentaire">
+        <p>"c'est un honneur pour moi de faire partie de cette communauté 
+              et de grandir avec eux"</p>
+      <span>- nom exemple</span>
+    </div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+</div>        
 
 <section class="insc-section">
     <div class="insc-contenair">
@@ -68,6 +89,21 @@
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true, 
+    autoplay: {
+      delay: 4000, // Change de commentaire toutes les 4 secondes
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 
 </body>
 </html>
