@@ -70,7 +70,7 @@
     
 }
 
-.info-box1, .info-box2, .info-box3, .info-box4 {
+.info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes{
     border: 2px solid #3882F6;
     border-radius: 10px;
     padding: 20px;
@@ -123,6 +123,17 @@
     /* Assombrir un peu l'image */
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.info-HOME-boxes {
+    background-image: url(image/IMG_1.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    /* Assombrir un peu l'image */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .cta-section .button {
