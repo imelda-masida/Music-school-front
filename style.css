@@ -3,9 +3,9 @@
   background-image: url('image/IMG_1.jpeg'); 
   
   
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
   
   
   height: 80vh; 
@@ -76,7 +76,7 @@
     padding: 20px;
     height: 100px;
     width: 150px;
-    font-size: 14px;
+    font-size: 14px; 
     color: #1F2937;
 }
 
