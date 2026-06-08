@@ -193,6 +193,19 @@
     
 }
 
+.team-cart1, .team-cart2, .team-cart3, .team-cart4 {
+     border: 2px solid #3882F6;
+    border-radius: 10px;
+    padding: 20px;
+    height: 350px;
+    width: 400px;
+    font-size: 14px; 
+    color: #1F2937;
+
+} 
+
+
+
 .footer-page {
     background-color: #1F2937;
     color: #F9FAF8;
