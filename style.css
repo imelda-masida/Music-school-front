@@ -22,14 +22,14 @@
 }
 
 
-.hero-title {
+.hero-title{
   color: #ffffff;
   font-size: 3rem; 
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.hero-subtitle {
+.hero-subtitle{
   color: #f3f4f6;
   font-size: 1.5rem;
   margin-bottom: 25px;
@@ -213,6 +213,7 @@
 .barre-image img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover; 
 }
 
@@ -225,12 +226,35 @@
   margin: 0 0 5px 0; 
   color: #1f2937;
   font-size: 1.2rem;
+  margin: 0 0 10px 0;
 }
 
 .carte-texte p {
   margin: 0;
   color: #6b7280;
   font-size: 0.95rem;
+}
+
+.teacher {
+    background-image: url('image/seipay.jpeg'); 
+  
+  
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  
+  
+  height: 80vh; 
+  
+  /* Centrer le texte verticalement et horizontalement*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Assombrir un peu l'image */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .footer-page {
