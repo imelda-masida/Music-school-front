@@ -196,18 +196,21 @@
 .team-cart1, .team-cart2, .team-cart3, .team-cart4 {
      border: 2px solid #3882F6;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0px;
     height: 350px;
     width: 400px;
     font-size: 14px; 
     color: #1F2937;
 
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
 } 
 
 .barre-image {
     height: 70%;
     width: 100%;
-    overflow: hidden;
 }
 
 .barre-image img {
@@ -218,21 +221,15 @@
 }
 
 .barre-texte {
-    padding: 15px;
+    padding: 0px;
     border-top: 1px solid #e5e7eb;
 }
 
 .barre-texte h3 {
   margin: 0 0 5px 0; 
-  color: #1f2937;
+  color: #ffffff;
   font-size: 1.2rem;
   margin: 0 0 10px 0;
-}
-
-.carte-texte p {
-  margin: 0;
-  color: #6b7280;
-  font-size: 0.95rem;
 }
 
 .teacher {
