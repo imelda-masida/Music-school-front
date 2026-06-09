@@ -254,6 +254,31 @@
   background-color: rgba(0, 0, 0, 0.4); 
 }
 
+
+#highlights {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 4px solid var(--luffy-red);
+}
+
+
 .footer-page {
     background-color: #1F2937;
     color: #F9FAF8;
