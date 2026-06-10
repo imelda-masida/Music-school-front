@@ -206,10 +206,16 @@
 
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+    max-width: 400px;
+
+    min-height: 350px;
+    height: auto;
 } 
 
 .barre-image {
-    height: 70%;
+    height: 200%;
     width: 100%;
 }
 
@@ -223,6 +229,8 @@
 .barre-texte {
     padding: 0px;
     border-top: 1px solid #e5e7eb;
+
+    flex-grow: 1;
 }
 
 .barre-texte h3 {
