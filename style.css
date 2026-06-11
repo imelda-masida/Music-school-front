@@ -208,7 +208,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+    width: 50%;
     max-width: 300px;
 
     min-height: 350px;
@@ -288,8 +288,30 @@
     height: 100%;
     border-radius: 10px;
     border: 4px solid var(--luffy-red);
+
 }
 
+.teacher-service {
+    background-image: url('image/violonmain.jpeg'); 
+  
+  
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin-bottom: 5px;
+  
+  height: 80vh; 
+  
+  /* Centrer le texte verticalement et horizontalement*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Assombrir un peu l'image */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
 
 .footer-page {
     background-color: #1F2937;
