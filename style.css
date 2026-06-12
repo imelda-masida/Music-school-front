@@ -196,7 +196,7 @@
     
 }
 
-.team-cart1, .team-cart2, .team-cart3, .team-cart4, .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5 {
+.team-cart1, .team-cart2, .team-cart3, .team-cart4, .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
      border: 2px solid #E5E7EB;
     border-radius: 10px;
     padding: 0px;
@@ -215,12 +215,12 @@
     height: auto;    
 } 
 
-.barre-image, .service-img{
+.barre-image, .service-img, .cours-img{
     height: 200%;
     width: 100%;
 }
 
-.barre-image img, .service-img img {
+.barre-image img, .service-img img, .cours-img img {
   width: 100%;
   height: 100%;
   display: block;
