@@ -336,13 +336,13 @@
 
        padding: 20px; 
     
-    /* LES LIGNES DU SCROLL HORIZONTAL */
-    overflow-x: auto;   /* Active le scroll horizontal quand ça dépasse */
-    overflow-y: hidden;  /* Bloque le scroll vertical pour éviter les secousses */
-    white-space: nowrap; /* Interdit STRICTEMENT aux boîtes de passer à la ligne */
+       /* LES LIGNES DU SCROLL HORIZONTAL */
+        overflow-x: auto;   /* Active le scroll horizontal quand ça dépasse */
+        overflow-y: hidden;  /* Bloque le scroll vertical pour éviter les secousses */
+        white-space: nowrap; /* Interdit STRICTEMENT aux boîtes de passer à la ligne */
     
-    /* glissement au doigt ultra-fluide */
-    -webkit-overflow-scrolling: touch; 
+       /* glissement au doigt ultra-fluide */
+       -webkit-overflow-scrolling: touch; 
 }
 
     /* ASTUCE : Masquer la barre de défilement grise pour que ce soit très propre */
@@ -367,6 +367,8 @@
         max-width: 320px;     /* Mais on bloque à 320px pour que ce soit joli et pas trop large */
         min-height: 320px;    /* Hauteur minimale flexible */
         height: auto;         /* La boîte grandira automatiquement si le texte est long */
+
+        flex-shrink: 0;
     }
 
     
