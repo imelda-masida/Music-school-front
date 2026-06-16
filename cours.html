@@ -26,68 +26,73 @@
      </div>
    </section>
 
-    <section class="service-cartes" style="display: flex;
-    justify-content: center;
-    gap: 30px;
+    
+    <section class="service-cartes swiper coursSwiper" style="
     background-color: #E5E7EB;
     overflow: hidden; 
     margin-top: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;">
 
-    <div class="cours-cart1">
-        <div class="cours-img">
-          <img src="image/violonmain.jpeg" alt="img">
-        </div>
+    
+    <div class="conteneur-cours swiper-wrapper" style="display: flex; justify-content: center; gap: 30px;">
+
         
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>classe 1</h4>
-         <p style="color: #ffffff;">texte</p>
+        <div class="swiper-slide cours-cart1">
+            <div class="cours-img">
+              <img src="image/violonmain.jpeg" alt="img">
+            </div>
+            
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>classe 1</h4>
+             <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-    </div>
 
-    <div class="cours-cart2">
-       <div class="cours-img">
-         <img src="image/violonpro.jpeg" alt="img">
-       </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>classe 2</h4>
-         <p style="color: #ffffff;">texte</p>
+        <div class="swiper-slide cours-cart2">
+           <div class="cours-img">
+             <img src="image/violonpro.jpeg" alt="img">
+           </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>classe 2</h4>
+             <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-    </div>
 
-    <div class="cours-cart3">
-        <div class="cours-img">
-            <img src="image/violonnoir.jpeg" alt="img">
+        <div class="swiper-slide cours-cart3">
+            <div class="cours-img">
+                <img src="image/violonnoir.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+             <h4>classe 3</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-         <h4>classe 3</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>
-    </div>
 
-    <div class="cours-cart4">
-        <div class="cours-img">
-            <img src="image/violonpro.jpeg" alt="img">
+        <div class="swiper-slide cours-cart4">
+            <div class="cours-img">
+                <img src="image/violonpro.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>classe 4</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>classe 4</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>
-    </div>
-    <div class="cours-cart5">
-        <div class="cours-img">
-            <img src="image/violonpro.jpeg" alt="img">
-        </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>classe 5</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>  
-    </div>
 
+        <div class="swiper-slide cours-cart5">
+            <div class="cours-img">
+                <img src="image/violonpro.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>classe 5</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>  
+        </div>
+
+    </div>
+    
+    <!-- Points de pagination pour le slider des cours (visibles sur mobile) -->
+    <div class="swiper-pagination"></div>
 </section>
 
 <section id="highlights">
@@ -102,32 +107,34 @@
             </div>
         </section>
 
-
-
-<section class="info-section">
+<!-- INTEGRATION SWIPER : Ajout des classes 'swiper infoSwiper' pour que le bas scrolle aussi sur mobile -->
+<section class="info-section swiper infoSwiper">
             <h2>PLUS D'INFORMATIONS</h2>
 
-            <div class="info-boxes">
-                <div class="info-HOME-boxes">
+            <div class="info-boxes swiper-wrapper">
+                <div class="swiper-slide info-HOME-boxes">
                     <a href="index.html" class="hero-button" style="color: white;">ACCUEIL</a>
                     <p>Bienvenue à MusiQUP Academy !</p>
                 </div>
 
-                <div class="info-box2">
+                <div class="swiper-slide info-box2">
                     <a href="equipe.html" class="hero-button" style="color: white;">NOTRE ÉQUIPE</a>
                     <p>Découvrez notre équipe de professeurs passionnés et expérimentés, dédiés à votre réussite musicale.</p>
                 </div>
 
-                <div class="info-box3">
+                <div class="swiper-slide info-box3">
                     <a href="service.html" class="hero-button" style="color: white;">NOS SERVICES</a>
                     <p>Decouvrez nos services de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
                 </div>
 
-               <div class="info-box4">
+               <div class="swiper-slide info-box4">
                     <a href="actualite.html" class="hero-button" style="color: white;">NOS ACTUALITÉS</a>
                     <p>Retrouvez nos dernières actualités et événements.</p>
                 </div>
             </div>
+            
+            <!-- Points de pagination pour les infos -->
+            <div class="swiper-pagination"></div>
         </section>
 
 <div class="swiper mySwiper" style="background-color: #E5E7EB;
@@ -192,15 +199,39 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<!-- INITIALISATION DES 3 SLIDERS DISTINCTS -->
 <script>
-  const swiper = new Swiper(".mySwiper", {
+  // 1. Slider des commentaires (inchangé)
+  const swiperCommentaires = new Swiper(".mySwiper", {
     loop: true, 
     autoplay: {
       delay: 4000, 
       disableOnInteraction: false, 
     },
     pagination: {
-      el: ".swiper-pagination", 
+      el: ".mySwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  // Slider des classes de cours
+  const swiperCours = new Swiper(".coursSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 25, /* Espace de 25px entre chaque classe */
+    loop: false,
+    pagination: {
+      el: ".coursSwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  // Slider des boîtes d'informations du bas 
+  const swiperInfos = new Swiper(".infoSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 20, 
+    loop: false,
+    pagination: {
+      el: ".infoSwiper .swiper-pagination", 
       clickable: true,
     },
   });

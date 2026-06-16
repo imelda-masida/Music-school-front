@@ -4,20 +4,17 @@
     padding: 0;
 }
 
+/* --- ENTÊTE / HERO --- */
 .hero-section {
   background-image: url('image/IMG_1.jpeg'); 
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
   height: 80vh; 
-  
-  /* Centrer le texte verticalement et horizontalement*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
-  /* Assombrir un peu l'image */
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.4); 
 }
@@ -35,6 +32,7 @@
   margin-bottom: 25px;
 }
 
+/* --- SECTIONS TEXTES --- */
 .info-section {
     padding: 40px;
     text-align: center;
@@ -47,106 +45,53 @@
     margin-bottom: 20px;
 }
 
-.info-boxes {
+
+.info-boxes, 
+.conteneur-equipe, 
+.conteneur-cours, 
+.contenair-service {
     display: flex;
     justify-content: center;
     gap: 20px;
 
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Sur PC, les lignes se coupent proprement si besoin */
 }
 
-.info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes{
+/* --- LES PETITES BOÎTES D'INFO --- */
+.info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes {
     border: 2px solid #E5E7EB;
     border-radius: 10px;
     padding: 20px;
-    width: 150px;
     font-size: 14px; 
-    color: #1F2937;
+    color: white; 
+    font-weight: bold;
+    cursor: pointer;  
     
-   
+    /* Tailles de base PC */
+    width: 180px;  
+    height: 180px;     
+    flex-shrink: 0;      
+    
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
                 box-shadow 0.4s ease, 
                 border-color 0.4s ease;
-    cursor: pointer;  
-    height: auto;    
-    
-    width: 75vw;       
-    max-width: 180px;  
-    height: 180px;     
-    
-    flex-shrink: 0;      
 }
 
+/* Styles individuels des petites boîtes */
+.info-box1 { background-image: url(image/IMG_3.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
+.info-box1:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
-.info-box1 {
-    background-image: url(image/IMG_3.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-.info-box1:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-color: #3882F6;
-}
+.info-box2 { background-image: url(image/IMG_4.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
+.info-box2:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
-.info-box2 {
-    background-image: url(image/IMG_4.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-.info-box2:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-color: #3882F6;
-}
+.info-box3 { background-image: url(image/IMG_5.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
+.info-box3:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
-.info-box3 {
-    background-image: url(image/IMG_5.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-.info-box3:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-color: #3882F6;
-}
+.info-box4 { background-image: url(image/IMG_2.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
+.info-box4:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
-.info-box4{
-    background-image: url(image/IMG_2.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-.info-box4:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-color: #3882F6;
-}
-
-.info-HOME-boxes {
-    background-image: url(image/IMG_1.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.info-HOME-boxes:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    border-color: #3882F6;
-}
+.info-HOME-boxes { background-image: url(image/IMG_1.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
+.info-HOME-boxes:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
 .insc-section {
     background-color: #3882F6;
@@ -155,7 +100,7 @@
     text-align: center;
 }
 
-
+/* --- LES GRANDES CARTES (TEAM, COURS, SERVICES) --- */
 .team-cart1, .team-cart2, .team-cart3, .team-cart4, 
 .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, 
 .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
@@ -167,16 +112,15 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-
     
     width: 100%;
     max-width: 300px;
     min-height: 350px;
     height: auto;    
+    flex-shrink: 0;
 } 
 
 .barre-image, .service-img, .cours-img{
-   
     height: 180px; 
     width: 100%;
 }
@@ -189,11 +133,9 @@
 }
 
 .barre-texte {
-    
     padding: 20px;
     border-top: 1px solid #e5e7eb;
     flex-grow: 1;
-   
     background-color: #3882F6; 
 }
 
@@ -203,17 +145,10 @@
   margin: 0 0 10px 0;
 }
 
-.barre-texte h4{
-    color: white;
-}
+.barre-texte h4{ color: white; }
+.barre-texte p { color: #e5e7eb; line-height: 1.4; }
 
-
-.barre-texte p {
-    color: #e5e7eb;
-    line-height: 1.4;
-}
-
-
+/* --- BARS DE TITRE INTERMÉDIAIRES --- */
 .teacher, .teacher-service, .cours-section {
   background-position: center; 
   background-size: cover; 
@@ -228,24 +163,16 @@
   background-color: rgba(0, 0, 0, 0.4); 
 }
 
-.teacher {
-    background-image: url('image/seipay.jpeg'); 
-}
-.teacher-service, .cours-section {
-    background-image: url('image/violonmain.jpeg'); 
-}
+.teacher { background-image: url('image/seipay.jpeg'); }
+.teacher-service, .cours-section { background-image: url('image/violonmain.jpeg'); }
+.contenair-service { text-align: left; }
 
-.contenair-service {
-   text-align: left;
-}
-
-
+/* --- VIDEO --- */
 #highlights {
     text-align: center;
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
-    
     padding: 0 15px; 
 }
 
@@ -265,25 +192,9 @@
 }
 
 /* --- FOOTER --- */
-.footer-page {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer-left p {
-    margin: 0;
-    color: #8d99ae;
-    font-size: 0.9rem;
-}
-
-.footer-right {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
+.footer-page { background-color: #1F2937; color: #F9FAF8; text-align: center; padding: 20px; }
+.footer-left p { margin: 0; color: #8d99ae; font-size: 0.9rem; }
+.footer-right { display: flex; gap: 12px; flex-wrap: wrap; }
 .footer-contenair {
     max-width: 1200px;
     margin: 0 auto;
@@ -296,102 +207,58 @@
 }
 
 
-
 @media (max-width: 768px) {
-
-   
-    .hero-section, 
-    .teacher, 
-    .teacher-service, 
-    .cours-section {
+    
+    /*  Redimensionnement adaptatif des entêtes */
+    .hero-section, .teacher, .teacher-service, .cours-section {
         height: auto;         
         padding: 60px 20px;   
-        flex-direction: column; 
     }
+    .hero-title { font-size: 1.8rem; line-height: 1.2; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .info-section h2 { font-size: 24px; }
 
-    
-    .hero-title {
-        font-size: 1.8rem;   
-        line-height: 1.2;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;    
-        margin-bottom: 15px;
-    }
-
-    .info-section h2 {
-        font-size: 24px;      
-        font-weight: 800;
-    }
-
-   
+    /*  Swiper configurer l'alignement en ligne */
     .info-boxes,
     .conteneur-equipe,
     .conteneur-cours,
     .contenair-service {
-       display: flex; 
-       gap: 15px;     
-       width: 100%;
-
-       padding: 20px; 
-    
-       /* LES LIGNES DU SCROLL HORIZONTAL */
-        overflow-x: auto;   /* Active le scroll horizontal quand ça dépasse */
-        overflow-y: hidden;  /* Bloque le scroll vertical pour éviter les secousses */
-        white-space: nowrap; /* Interdit STRICTEMENT aux boîtes de passer à la ligne */
-    
-       /* glissement au doigt ultra-fluide */
-       -webkit-overflow-scrolling: touch; 
-}
-
-    /* ASTUCE : Masquer la barre de défilement grise pour que ce soit très propre */
-     .info-boxes::-webkit-scrollbar, 
-     .conteneur-equipe::-webkit-scrollbar, 
-     .conteneur-cours::-webkit-scrollbar,
-     .contenair-service::-webkit-scrollbar {
-    display: none; /* Cache la barre sur Chrome et Safari */
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important; /* Interdiction formelle d'aller à la ligne */
+        gap: 0px !important; /* Swiper gère lui-même les espaces (spaceBetween) */
+        width: 100% !important;
     }
 
-    .info-boxes, .conteneur-equipe, .conteneur-cours, .contenair-service {
-        scrollbar-width: none; /* Cache la barre sur Firefox */
+    /* TAILLES ADAPTATIVES DES SUPPORTS DANS LE SLIDER (vw) 
+          Chaque boîte devient pleinement visible et garde sa taille */
+    .info-boxes .swiper-slide {
+        width: 70vw !important; /* Les petites boîtes prennent 70% de l'écran mobile */
+        max-width: 180px !important;
+        height: 180px !important;
+        flex-shrink: 0 !important;
     }
 
-    
-    /* Toutes les boîtes d'info et les cartes prennent 100% de la largeur du mobile */
-    .info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes,
-    .team-cart1, .team-cart2, .team-cart3, .team-cart4, 
-    .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, 
-    .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
-        width: 100%;          /* Occupe toute la largeur de l'écran disponible */
-        max-width: 320px;     /* Mais on bloque à 320px pour que ce soit joli et pas trop large */
-        min-height: 320px;    /* Hauteur minimale flexible */
-        height: auto;         /* La boîte grandira automatiquement si le texte est long */
-
-        flex-shrink: 0;
+    .conteneur-equipe .swiper-slide,
+    .conteneur-cours .swiper-slide,
+    .contenair-service .swiper-slide {
+        width: 85vw !important; /* Les grandes cartes prennent 85% de l'écran mobile */
+        max-width: 290px !important;
+        height: auto !important;
+        flex-shrink: 0 !important;
     }
 
-    
-    .barre-image, 
-    .service-img, 
-    .cours-img {
-        height: 160px;        /* On donne une hauteur fixe sur mobile */
+    /*  Gestion des paginations sous les sliders */
+    .swiper-pagination {
+        position: relative !important;
+        bottom: 0 !important;
+        margin-top: 15px;
+    }
+    .swiper-pagination-bullet-active {
+        background: #3882F6 !important;
     }
 
-    
-    #highlights {
-        padding: 0 15px;      /* Évite que la vidéo colle aux bords de l'écran */
-        margin: 30px auto;
-    }
-
-    
-    .footer-contenair {
-        flex-direction: column; /* Le texte et les liens s'empilent au lieu d'être côte à côte */
-        text-align: center;
-        gap: 15px;
-    }
-
-    .footer-right {
-        justify-content: center; /* Centre les liens du footer sur l'écran du téléphone */
-    }
+    /* Footer en colonne */
+    .footer-contenair { flex-direction: column; text-align: center; gap: 15px; }
+    .footer-right { justify-content: center; }
 }

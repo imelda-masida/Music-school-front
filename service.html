@@ -10,114 +10,114 @@
 </head>
 <body>
     <section class="bande-hero" style="
-      position: -webkit-sticky; 
-      position: sticky;
-      top: 0; 
-     z-index: 1000; 
-     background-color: #ffffff; 
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
+  background-color: #ffffff; 
 ">
     <h1 class="">MusiQUP Academy</h1>
     </section>
 
      <section class="teacher-service">
      <div class="contenair-service" style="color: white;">
-      <h2 style="text-decoration: underline;">NOS SERVICES</h2>
-        <p>Nous proposons des cours de musique adaptés à tous les ages et tous les niveaux, 
-          ainsi que des prestations musicales pour vos événements spéciaux.</p>
-          <p>Découvrez nos services et rejoignez notre communauté de passionnés de musique.</p>
-        </p>
+      <h2 style="text-decoration: underline; margin-bottom: 15px;">NOS SERVICES</h2>
+          <p>Nous proposons des cours de musique adaptés à tous les ages et tous les niveaux, ainsi que des prestations musicales pour vos événements spéciaux.
+          Découvrez nos services and rejoignez notre communauté de passionnés de musique.</p>
      </div>
    </section>
-  <section class="service-cartes" style="display: flex;
-    justify-content: center;
-    gap: 30px;
+
+  <section class="service-cartes swiper serviceSwiper" style="
     background-color: #E5E7EB;
     overflow: hidden; 
     margin-top: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;">
 
-    <div class="service-cart1">
-        <div class="service-img">
-          <img src="image/violonmain.jpeg" alt="img">
-        </div>
-        
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>Cours de violon personnalisés</h4>
-         <p style="color: #ffffff;">texte</p>
-        </div>
-    </div>
+    <div class="contenair-service swiper-wrapper" style="display: flex; justify-content: center; gap: 30px;">
 
-    <div class="service-cart2">
-       <div class="service-img">
-         <img src="image/violonpro.jpeg" alt="img">
-       </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>Formation musicale complete</h4>
-         <p style="color: #ffffff;">texte</p>
+        <div class="swiper-slide service-cart1">
+            <div class="service-img">
+              <img src="image/violonmain.jpeg" alt="img">
+            </div>
+            
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>Cours de violon personnalisés</h4>
+             <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-    </div>
 
-    <div class="service-cart3">
-        <div class="service-img">
-            <img src="image/violonnoir.jpeg" alt="img">
+        <div class="swiper-slide service-cart2">
+           <div class="service-img">
+             <img src="image/violonpro.jpeg" alt="img">
+           </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>Formation musicale complete</h4>
+             <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-         <h4>Accompagnement artistique</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>
-    </div>
 
-    <div class="service-cart4">
-        <div class="service-img">
-            <img src="image/violonpro.jpeg" alt="img">
+        <div class="swiper-slide service-cart3">
+            <div class="service-img">
+                <img src="image/violonnoir.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+             <h4>Accompagnement artistique</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>Prestations pour événements</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>
-    </div>
-    <div class="service-cart5">
-        <div class="service-img">
-            <img src="image/violonpro.jpeg" alt="img">
-        </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h4>Cours en ligne</h4>
-          <p style="color: #ffffff;">texte</p>
-          
-        </div>  
-    </div>
 
+        <div class="swiper-slide service-cart4">
+            <div class="service-img">
+                <img src="image/violonpro.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>Prestations pour événements</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide service-cart5">
+            <div class="service-img">
+                <img src="image/violonpro.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h4>Cours en ligne</h4>
+              <p style="color: #ffffff;">texte</p>
+            </div>  
+        </div>
+
+    </div>
+    
+    <div class="swiper-pagination"></div>
 </section>
     
-
-<section class="info-section">
+<section class="info-section swiper infoSwiper">
             <h2>PLUS D'INFORMATIONS</h2>
 
-            <div class="info-boxes">
-                <div class="info-box1">
+            <div class="info-boxes swiper-wrapper">
+                <div class="swiper-slide info-box1">
                     <a href="cours.html" class="hero-button" style="color: white;">NOS COURS</a>
                     <p>Découvrez nos cours de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
                 </div>
 
-                <div class="info-box2">
+                <div class="swiper-slide info-box2">
                     <a href="equipe.html" class="hero-button" style="color: white;">NOTRE ÉQUIPE</a>
                     <p>Découvrez notre équipe de professeurs passionnés et expérimentés, dédiés à votre réussite musicale.</p>
                 </div>
 
-               <div class="info-HOME-boxes">
+               <div class="swiper-slide info-HOME-boxes">
                     <a href="index.html" class="hero-button" style="color: white;">ACCUEIL</a>
                     <p>Bienvenue à MusiQUP Academy !</p>
                 </div>
 
-
-               <div class="info-box4">
+               <div class="swiper-slide info-box4">
                     <a href="actualite.html" class="hero-button" style="color: white;">NOS ACTUALITÉS</a>
                     <p>Retrouvez nos dernières actualités et événements.</p>
                 </div>
             </div>
+            
+            <div class="swiper-pagination"></div>
         </section>
 
 <div class="swiper mySwiper" style="background-color: #E5E7EB;
@@ -183,14 +183,37 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  const swiper = new Swiper(".mySwiper", {
+  // Slider des commentaires
+  const swiperCommentaires = new Swiper(".mySwiper", {
     loop: true, 
     autoplay: {
       delay: 4000, 
       disableOnInteraction: false, 
     },
     pagination: {
-      el: ".swiper-pagination", 
+      el: ".mySwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  // Slider des services (Nouveau)
+  const swiperServices = new Swiper(".serviceSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 25, /* Gère l'écartement de tes services */
+    loop: false,
+    pagination: {
+      el: ".serviceSwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  // Slider des boîtes d'informations du bas
+  const swiperInfos = new Swiper(".infoSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 20, 
+    loop: false,
+    pagination: {
+      el: ".infoSwiper .swiper-pagination", 
       clickable: true,
     },
   });

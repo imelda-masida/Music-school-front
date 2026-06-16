@@ -26,62 +26,63 @@
      </div>
    </section>
 
-
-
-<section class="team-cartes" style="display: flex;
-    justify-content: center;
-    gap: 30px;
+<section class="service-cartes swiper teamSwiper" style="
     background-color: #E5E7EB;
     overflow: hidden; 
     margin-top: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;">
 
-    <div class="team-cart1">
-        <div class="barre-image">
-          <img src="image/violonmain.jpeg" alt="img">
-        </div>
-        
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h3>Nom</h3>
-         <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/ petite description</p>
-         <p style="color: #ffffff;">Spécialité : Piano</p>
-        </div>
-    </div>
+    <div class="conteneur-equipe swiper-wrapper" style="display: flex; justify-content: center; gap: 30px;">
 
-    <div class="team-cart2">
-       <div class="barre-image">
-         <img src="image/violonpro.jpeg" alt="img">
-       </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h3>Nom</h3>
-         <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/ petite description</p>
-         <p style="color: #ffffff;">Spécialité : Guitare</p>
-         </div>
-    </div>
+        <div class="swiper-slide team-cart1">
+            <div class="barre-image">
+              <img src="image/violonmain.jpeg" alt="img">
+            </div>
+            
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h3>Nom</h3>
+             <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/ petite description</p>
+             <p style="color: #ffffff;">Spécialité : Piano</p>
+            </div>
+        </div>
 
-    <div class="team-cart3">
-        <div class="barre-image">
-            <img src="image/violonnoir.jpeg" alt="img">
+        <div class="swiper-slide team-cart2">
+           <div class="barre-image">
+             <img src="image/violonpro.jpeg" alt="img">
+           </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h3>Nom</h3>
+             <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/ petite description</p>
+             <p style="color: #ffffff;">Spécialité : Guitare</p>
+             </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h3>Nom</h3>
-          <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/petite description</p>
-          <p style="color: #ffffff;">Spécialité : Violon</p>
-        </div>
-    </div>
 
-    <div class="team-cart4">
-        <div class="barre-image">
-            <img src="image/violonpro.jpeg" alt="img">
+        <div class="swiper-slide team-cart3">
+            <div class="barre-image">
+                <img src="image/violonnoir.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h3>Nom</h3>
+              <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/petite description</p>
+              <p style="color: #ffffff;">Spécialité : Violon</p>
+            </div>
         </div>
-        <div class="barre-texte" style="background-color: #3882f3;">
-          <h3>Nom</h3>
-          <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/petite description</p>
-          <p style="color: #ffffff;">Spécialité : Chant</p>
-        </div>
-    </div>
 
+        <div class="swiper-slide team-cart4">
+            <div class="barre-image">
+                <img src="image/violonpro.jpeg" alt="img">
+            </div>
+            <div class="barre-texte" style="background-color: #3882f3;">
+              <h3>Nom</h3>
+              <p style="color: #ffffff;">cition experience ou nom suivant le niveau dans le domaine/petite description</p>
+              <p style="color: #ffffff;">Spécialité : Chant</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="swiper-pagination"></div>
 </section>
 
  <section id="highlights">
@@ -96,33 +97,32 @@
             </div>
         </section>
 
-    
-
-<section class="info-section">
+<section class="info-section swiper infoSwiper">
             <h2>PLUS D'INFORMATIONS</h2>
 
-            <div class="info-boxes"">
-                <div class="info-box1">
+            <div class="info-boxes swiper-wrapper">
+                <div class="swiper-slide info-box1">
                     <a href="cours.html" class="hero-button" style="color: white;">Nos cours</a>
                     <p>Découvrez nos cours de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
                 </div>
 
-                <div class="info-HOME-boxes">
+                <div class="swiper-slide info-HOME-boxes">
                     <a href="index.html" class="hero-button" style="color: white;">ACCUEIL</a>
                     <p>Bienvenue à MusiQUP Academy !</p>
                 </div>
 
-
-                <div class="info-box3">
+                <div class="swiper-slide info-box3">
                     <a href="service.html" class="hero-button" style="color: white;">NOS SERVICES</a>
                     <p>Decouvrez nos services de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
                 </div>
 
-               <div class="info-box4">
+               <div class="swiper-slide info-box4">
                     <a href="actualite.html" class="hero-button" style="color: white;">NOS ACTUALITÉS</a>
                     <p>Retrouvez nos dernières actualités et événements.</p>
                 </div>
             </div>
+            
+            <div class="swiper-pagination"></div>
         </section>
 
 <div class="swiper mySwiper" style="background-color: #E5E7EB;
@@ -188,14 +188,37 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  const swiper = new Swiper(".mySwiper", {
+  // Slider des commentaires
+  const swiperCommentaires = new Swiper(".mySwiper", {
     loop: true, 
     autoplay: {
       delay: 4000, 
       disableOnInteraction: false, 
     },
     pagination: {
-      el: ".swiper-pagination", 
+      el: ".mySwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  //  Slider des enseignants 
+  const swiperTeam = new Swiper(".teamSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 25, /* Espace entre les profs */
+    loop: false,
+    pagination: {
+      el: ".teamSwiper .swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+  //Slider des boîtes d'informations du bas
+  const swiperInfos = new Swiper(".infoSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 20, 
+    loop: false,
+    pagination: {
+      el: ".infoSwiper .swiper-pagination", 
       clickable: true,
     },
   });
