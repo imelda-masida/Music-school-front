@@ -3,16 +3,12 @@
     margin: 0;
     padding: 0;
 }
+
 .hero-section {
-  
   background-image: url('image/IMG_1.jpeg'); 
-  
-  
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
-  
-  
   height: 80vh; 
   
   /* Centrer le texte verticalement et horizontalement*/
@@ -26,7 +22,6 @@
   background-color: rgba(0, 0, 0, 0.4); 
 }
 
-
 .hero-title{
   color: #ffffff;
   font-size: 3rem; 
@@ -39,22 +34,6 @@
   font-size: 1.5rem;
   margin-bottom: 25px;
 }
-
-/*.hero-button {
-  display: inline-block;
-  background-color: #d4af37; /* Une belle couleur dorée pour l'académie 
-  color: #ffffff;
-  padding: 12px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}*/
-
-/*.hero-button:hover {
-  background-color: #aa8c2c; /* Devient un peu plus foncé au survol 
-}*/
-
 
 .info-section {
     padding: 40px;
@@ -72,7 +51,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+
+    flex-wrap: wrap; 
 }
 
 .info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes{
@@ -82,18 +62,19 @@
     width: 150px;
     font-size: 14px; 
     color: #1F2937;
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;  
-  
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.4s ease, 
-              border-color 0.4s ease;
-
-
     
-    height: auto;          
+   
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s ease, 
+                border-color 0.4s ease;
+    cursor: pointer;  
+    height: auto;    
+    
+    width: 75vw;       
+    max-width: 180px;  
+    height: 180px;     
+    
+    flex-shrink: 0;      
 }
 
 
@@ -101,23 +82,14 @@
     background-image: url(image/IMG_3.jpeg);
     background-size: cover;
     background-position: center;
-
     color: white;
-
-    
-
-    /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4); 
-
-
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
-
 .info-box1:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-color: #3882F6;
-    
 }
 
 .info-box2 {
@@ -125,17 +97,13 @@
     background-size: cover;
     background-position: center;
     color: white;
-
-    /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
-
 .info-box2:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-color: #3882F6;
-    
 }
 
 .info-box3 {
@@ -143,17 +111,13 @@
     background-size: cover;
     background-position: center;
     color: white;
-
-    /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
-
 .info-box3:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-color: #3882F6;
-    
 }
 
 .info-box4{
@@ -161,17 +125,13 @@
     background-size: cover;
     background-position: center;
     color: white;
-
-    /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
-
 .info-box4:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-color: #3882F6;
-    
 }
 
 .info-HOME-boxes {
@@ -179,17 +139,13 @@
     background-size: cover;
     background-position: center;
     color: white;
-
-    /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
 }
-
 .info-HOME-boxes:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-color: #3882F6;
-    
 }
 
 .insc-section {
@@ -197,31 +153,31 @@
     color: #F9FAF8;
     padding: 40px;
     text-align: center;
-
-    
 }
 
-.team-cart1, .team-cart2, .team-cart3, .team-cart4, .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
-     border: 2px solid #E5E7EB;
+
+.team-cart1, .team-cart2, .team-cart3, .team-cart4, 
+.service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, 
+.cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
+    border: 2px solid #E5E7EB;
     border-radius: 10px;
     padding: 0px;
     font-size: 14px; 
     color: #1F2937;
-
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    
+    width: 100%;
     max-width: 300px;
-
     min-height: 350px;
     height: auto;    
 } 
 
 .barre-image, .service-img, .cours-img{
-    height: 200%;
+   
+    height: 180px; 
     width: 100%;
 }
 
@@ -233,14 +189,15 @@
 }
 
 .barre-texte {
-    padding: 0px;
+    
+    padding: 20px;
     border-top: 1px solid #e5e7eb;
-
     flex-grow: 1;
+   
+    background-color: #3882F6; 
 }
 
 .barre-texte h3{
-  margin: 0 0 5px 0; 
   color: #ffffff;
   font-size: 1.2rem;
   margin: 0 0 10px 0;
@@ -250,26 +207,36 @@
     color: white;
 }
 
-.teacher {
-    background-image: url('image/seipay.jpeg'); 
-  
-  
+
+.barre-texte p {
+    color: #e5e7eb;
+    line-height: 1.4;
+}
+
+
+.teacher, .teacher-service, .cours-section {
   background-position: center; 
   background-size: cover; 
   background-repeat: no-repeat; 
   margin-bottom: 5px;
-  
   height: 30vh; 
-  
-  /* Centrer le texte verticalement et horizontalement*/
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
-  /* Assombrir un peu l'image */
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.teacher {
+    background-image: url('image/seipay.jpeg'); 
+}
+.teacher-service, .cours-section {
+    background-image: url('image/violonmain.jpeg'); 
+}
+
+.contenair-service {
+   text-align: left;
 }
 
 
@@ -279,6 +246,7 @@
     max-width: 1200px;
     margin: 50px auto;
     
+    padding: 0 15px; 
 }
 
 .video-container {
@@ -293,42 +261,17 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    border: 4px solid var(--luffy-red);
-
+    border: 4px solid #3882F6; 
 }
 
-.teacher-service, .cours-section {
- background-image: url('image/violonmain.jpeg'); 
-  
-  
-  background-position: center; 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  margin-bottom: 5px;
-  
-  height: 30vh; 
-  
-  /* Centrer le texte verticalement et horizontalement*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  /* Assombrir un peu l'image */
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4); 
-}
-
-.contenair-service {
-   text-align: left;
-    
-}
+/* --- FOOTER --- */
 .footer-page {
     background-color: #1F2937;
     color: #F9FAF8;
     text-align: center;
     padding: 20px;
 }
+
 .footer-left p {
     margin: 0;
     color: #8d99ae;
@@ -340,6 +283,7 @@
     gap: 12px;
     flex-wrap: wrap;
 }
+
 .footer-contenair {
     max-width: 1200px;
     margin: 0 auto;
@@ -349,9 +293,103 @@
     padding: 0 20px;
     flex-wrap: wrap; 
     gap: 15px;
-    
 }
 
 
 
+@media (max-width: 768px) {
 
+   
+    .hero-section, 
+    .teacher, 
+    .teacher-service, 
+    .cours-section {
+        height: auto;         
+        padding: 60px 20px;   
+        flex-direction: column; 
+    }
+
+    
+    .hero-title {
+        font-size: 1.8rem;   
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;    
+        margin-bottom: 15px;
+    }
+
+    .info-section h2 {
+        font-size: 24px;      
+        font-weight: 800;
+    }
+
+   
+    .info-boxes,
+    .conteneur-equipe,
+    .conteneur-cours,
+    .contenair-service {
+       display: flex; 
+       gap: 15px;     
+       width: 100%;
+
+       padding: 20px; 
+    
+    /* LES LIGNES DU SCROLL HORIZONTAL */
+    overflow-x: auto;   /* Active le scroll horizontal quand ça dépasse */
+    overflow-y: hidden;  /* Bloque le scroll vertical pour éviter les secousses */
+    white-space: nowrap; /* Interdit STRICTEMENT aux boîtes de passer à la ligne */
+    
+    /* glissement au doigt ultra-fluide */
+    -webkit-overflow-scrolling: touch; 
+}
+
+    /* ASTUCE : Masquer la barre de défilement grise pour que ce soit très propre */
+     .info-boxes::-webkit-scrollbar, 
+     .conteneur-equipe::-webkit-scrollbar, 
+     .conteneur-cours::-webkit-scrollbar,
+     .contenair-service::-webkit-scrollbar {
+    display: none; /* Cache la barre sur Chrome et Safari */
+    }
+
+    .info-boxes, .conteneur-equipe, .conteneur-cours, .contenair-service {
+        scrollbar-width: none; /* Cache la barre sur Firefox */
+    }
+
+    
+    /* Toutes les boîtes d'info et les cartes prennent 100% de la largeur du mobile */
+    .info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes,
+    .team-cart1, .team-cart2, .team-cart3, .team-cart4, 
+    .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, 
+    .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
+        width: 100%;          /* Occupe toute la largeur de l'écran disponible */
+        max-width: 320px;     /* Mais on bloque à 320px pour que ce soit joli et pas trop large */
+        min-height: 320px;    /* Hauteur minimale flexible */
+        height: auto;         /* La boîte grandira automatiquement si le texte est long */
+    }
+
+    
+    .barre-image, 
+    .service-img, 
+    .cours-img {
+        height: 160px;        /* On donne une hauteur fixe sur mobile */
+    }
+
+    
+    #highlights {
+        padding: 0 15px;      /* Évite que la vidéo colle aux bords de l'écran */
+        margin: 30px auto;
+    }
+
+    
+    .footer-contenair {
+        flex-direction: column; /* Le texte et les liens s'empilent au lieu d'être côte à côte */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-right {
+        justify-content: center; /* Centre les liens du footer sur l'écran du téléphone */
+    }
+}
