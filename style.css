@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* --- ENTÊTE / HERO --- */
+
 .hero-section {
   background-image: url('image/IMG_1.jpeg'); 
   background-position: center; 
@@ -32,7 +32,7 @@
   margin-bottom: 25px;
 }
 
-/* --- SECTIONS TEXTES --- */
+
 .info-section {
     padding: 40px;
     text-align: center;
@@ -54,10 +54,10 @@
     justify-content: center;
     gap: 20px;
 
-    flex-wrap: wrap; /* Sur PC, les lignes se coupent proprement si besoin */
+    flex-wrap: wrap; 
 }
 
-/* --- LES PETITES BOÎTES D'INFO --- */
+
 .info-box1, .info-box2, .info-box3, .info-box4, .info-HOME-boxes {
     border: 2px solid #E5E7EB;
     border-radius: 10px;
@@ -77,7 +77,7 @@
                 border-color 0.4s ease;
 }
 
-/* Styles individuels des petites boîtes */
+
 .info-box1 { background-image: url(image/IMG_3.jpeg); background-size: cover; background-position: center; background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.4); }
 .info-box1:hover { transform: translateY(-8px); box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); border-color: #3882F6; }
 
@@ -100,7 +100,7 @@
     text-align: center;
 }
 
-/* --- LES GRANDES CARTES (TEAM, COURS, SERVICES) --- */
+
 .team-cart1, .team-cart2, .team-cart3, .team-cart4, 
 .service-cart1, .service-cart2, .service-cart3, .service-cart4, .service-cart5, 
 .cours-cart1, .cours-cart2, .cours-cart3, .cours-cart4, .cours-cart5 {
@@ -148,7 +148,7 @@
 .barre-texte h4{ color: white; }
 .barre-texte p { color: #e5e7eb; line-height: 1.4; }
 
-/* --- BARS DE TITRE INTERMÉDIAIRES --- */
+
 .teacher, .teacher-service, .cours-section {
   background-position: center; 
   background-size: cover; 
@@ -167,7 +167,7 @@
 .teacher-service, .cours-section { background-image: url('image/violonmain.jpeg'); }
 .contenair-service { text-align: left; }
 
-/* --- VIDEO --- */
+
 #highlights {
     text-align: center;
     width: 100%;
@@ -191,7 +191,7 @@
     border: 4px solid #3882F6; 
 }
 
-/* --- FOOTER --- */
+
 .footer-page { background-color: #1F2937; color: #F9FAF8; text-align: center; padding: 20px; }
 .footer-left p { margin: 0; color: #8d99ae; font-size: 0.9rem; }
 .footer-right { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -209,7 +209,7 @@
 
 @media (max-width: 768px) {
     
-    /*  Redimensionnement adaptatif des entêtes */
+    
     .hero-section, .teacher, .teacher-service, .cours-section {
         height: auto;         
         padding: 60px 20px;   
@@ -218,37 +218,36 @@
     .hero-subtitle { font-size: 1.1rem; }
     .info-section h2 { font-size: 24px; }
 
-    /*  Swiper configurer l'alignement en ligne */
+    
     .info-boxes,
     .conteneur-equipe,
     .conteneur-cours,
     .contenair-service {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important; /* Interdiction formelle d'aller à la ligne */
-        gap: 0px !important; /* Swiper gère lui-même les espaces (spaceBetween) */
-        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0px; 
+        width: 100% ;
     }
 
-    /* TAILLES ADAPTATIVES DES SUPPORTS DANS LE SLIDER (vw) 
-          Chaque boîte devient pleinement visible et garde sa taille */
+    
     .info-boxes .swiper-slide {
-        width: 70vw !important; /* Les petites boîtes prennent 70% de l'écran mobile */
-        max-width: 180px !important;
-        height: 180px !important;
-        flex-shrink: 0 !important;
+        width: 70vw; 
+        max-width: 180px;
+        height: 180px;
+        flex-shrink: 0;
     }
 
     .conteneur-equipe .swiper-slide,
     .conteneur-cours .swiper-slide,
     .contenair-service .swiper-slide {
-        width: 85vw !important; /* Les grandes cartes prennent 85% de l'écran mobile */
-        max-width: 290px !important;
-        height: auto !important;
-        flex-shrink: 0 !important;
+        width: 85vw;
+        max-width: 290px;
+        height: auto;
+        flex-shrink: 0;
     }
 
-    /*  Gestion des paginations sous les sliders */
+    
     .swiper-pagination {
         position: relative !important;
         bottom: 0 !important;
@@ -258,7 +257,7 @@
         background: #3882F6 !important;
     }
 
-    /* Footer en colonne */
+
     .footer-contenair { flex-direction: column; text-align: center; gap: 15px; }
     .footer-right { justify-content: center; }
 }

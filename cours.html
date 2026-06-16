@@ -91,7 +91,7 @@
 
     </div>
     
-    <!-- Points de pagination pour le slider des cours (visibles sur mobile) -->
+    
     <div class="swiper-pagination"></div>
 </section>
 
@@ -107,7 +107,7 @@
             </div>
         </section>
 
-<!-- INTEGRATION SWIPER : Ajout des classes 'swiper infoSwiper' pour que le bas scrolle aussi sur mobile -->
+
 <section class="info-section swiper infoSwiper">
             <h2>PLUS D'INFORMATIONS</h2>
 
@@ -133,7 +133,7 @@
                 </div>
             </div>
             
-            <!-- Points de pagination pour les infos -->
+        
             <div class="swiper-pagination"></div>
         </section>
 
@@ -199,9 +199,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- INITIALISATION DES 3 SLIDERS DISTINCTS -->
+
 <script>
-  // 1. Slider des commentaires (inchangé)
+
   const swiperCommentaires = new Swiper(".mySwiper", {
     loop: true, 
     autoplay: {
@@ -214,10 +214,10 @@
     },
   });
 
-  // Slider des classes de cours
+  
   const swiperCours = new Swiper(".coursSwiper", {
     slidesPerView: "auto", 
-    spaceBetween: 25, /* Espace de 25px entre chaque classe */
+    spaceBetween: 25, 
     loop: true,
     pagination: {
       el: ".coursSwiper .swiper-pagination", 
@@ -225,7 +225,7 @@
     },
   });
 
-  // Slider des boîtes d'informations du bas 
+  
   const swiperInfos = new Swiper(".infoSwiper", {
     slidesPerView: "auto", 
     spaceBetween: 20, 
