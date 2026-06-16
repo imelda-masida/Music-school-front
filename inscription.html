@@ -37,32 +37,33 @@
 
     
 
-<section class="info-section">
+<section class="info-section swiper infoSwiper">
             <h2>PLUS D'INFORMATIONS</h2>
 
-            <div class="info-boxes">
-                <div class="info-box1">
-                    <a href="cours.html" class="hero-button" style="color: white;">Nos cours</a>
+            <div class="info-boxes swiper-wrapper">
+                <div class="swiper-slide info-box1">
+                    <a href="cours.html" class="hero-button" style="color: white;">NOS COURS</a>
                     <p>Découvrez nos cours de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
                 </div>
 
-                <div class="info-box2">
+                <div class="swiper-slide info-box2">
                     <a href="equipe.html" class="hero-button" style="color: white;">NOTRE ÉQUIPE</a>
                     <p>Découvrez notre équipe de professeurs passionnés et expérimentés, dédiés à votre réussite musicale.</p>
                 </div>
 
-                <div class="info-box3">
-                    <a href="service.html" class="hero-button" style="color: white;">NOS SERVICES</a>
-                    <p>Decouvrez nos services de musique adaptés à tous les niveaux, du débutant au professionnel.</p>
+               <div class="swiper-slide info-HOME-boxes">
+                    <a href="index.html" class="hero-button" style="color: white;">ACCUEIL</a>
+                    <p>Bienvenue à MusiQUP Academy !</p>
                 </div>
 
-               <div class="info-box4">
+               <div class="swiper-slide info-box4">
                     <a href="actualite.html" class="hero-button" style="color: white;">NOS ACTUALITÉS</a>
                     <p>Retrouvez nos dernières actualités et événements.</p>
                 </div>
             </div>
+            
+            <div class="swiper-pagination"></div>
         </section>
-
 <div class="swiper mySwiper" style="background-color: #E5E7EB;
     padding: 30px;
     text-align: center;
@@ -132,6 +133,16 @@
     },
     pagination: {
       el: ".swiper-pagination", 
+      clickable: true,
+    },
+  });
+
+   const swiperInfos = new Swiper(".infoSwiper", {
+    slidesPerView: "auto", 
+    spaceBetween: 20, 
+    loop: true,
+    pagination: {
+      el: ".infoSwiper .swiper-pagination", 
       clickable: true,
     },
   });
